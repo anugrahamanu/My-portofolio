@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anugrah Amanu Pratama | Full Stack Web Developer & Educator</title>
+    <meta name="description" content="Portfolio of Anugrah Amanu Pratama, Full Stack Web Developer, UI/UX Designer, and Teacher based in Indonesia.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <span class="text-primary">A</span>nugrah<span class="text-accent">.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section container">
+            <div class="hero-content">
+                <div id="typed-output" style="min-height: 150px;"></div>
+                
+                <div class="roles">
+                    <span class="role-badge">Full Stack Web Developer</span>
+                    <span class="role-badge">UI/UX Designer</span>
+                    <span class="role-badge">Guru SMP</span>
+                </div>
+                
+                <p class="description">
+                    Saya membantu sekolah, UMKM, dan instansi membangun website modern, cepat, responsif, dan mudah dikelola. Saya juga aktif sebagai guru serta mengembangkan berbagai sistem digital untuk dunia pendidikan.
+                </p>
+                
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary">
+                        Hubungi Saya <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">
+                        Lihat Karya
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="image-wrapper">
+                    <div class="image-container">
+                        <img src="assets/images/foto-saya.jpg" alt="Anugrah Amanu Pratama" class="portrait" id="hero-img">
+                    </div>
+                    <!-- Floating Cards -->
+                    <div class="floating-card location-card">
+                        <i class='bx bx-map'></i>
+                        <span>Berbasis di Indonesia</span>
+                    </div>
+                    <div class="floating-card experience-card">
+                        <i class='bx bx-code-alt'></i>
+                        <div class="card-text">
+                            <h4>Web Developer</h4>
+                            <p>UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links vertical">
+                    <a href="https://github.com/anugrahamanu" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/nugrahaa_amp/" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://wa.me/6287761249353" target="_blank" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang <span class="text-primary">Saya</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-visual">
+                    <div class="image-wrapper">
+                        <img src="assets/images/foto-saya.jpg" alt="About Anugrah" class="about-img">
+
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-subtitle">Menggabungkan Edukasi & Teknologi</h3>
+                    <p>
+                        Spesialis Website Sekolah, Company Profile, Landing Page, Sistem Informasi Sekolah, dan Aplikasi Berbasis Web.
+                        Saya percaya bahwa teknologi harus memudahkan, bukan menyulitkan. Fokus utama saya adalah menciptakan solusi digital yang elegan, fungsional, dan memberikan dampak positif, terutama di bidang pendidikan.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Keahlian <span class="text-accent">Teknis</span></h2>
+                <div class="line center"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend & Design</h3>
+                    <div class="skill-list" id="frontend-skills">
+                        <!-- Items injected by JS -->
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & CMS</h3>
+                    <div class="skill-list" id="backend-skills">
+                        <!-- Items injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Karya <span class="text-primary">Terbaru</span></h2>
+                <div class="line center"></div>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="education">Pendidikan</button>
+
+                <button class="filter-btn" data-filter="landing">Landing Page</button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Projects injected by JS -->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section container">
+            <div class="section-header">
+                <h2 class="section-title">Jejak <span class="text-primary">Karier</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Sekarang</span>
+                        <h3 class="timeline-title">Guru SMP Negeri 3 OKU</h3>
+                        <p class="timeline-desc">Mendidik siswa dan mengembangkan berbagai sistem digital untuk dunia pendidikan di sekolah.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Sekarang</span>
+                        <h3 class="timeline-title">Freelance Full Stack Developer</h3>
+                        <p class="timeline-desc">Membangun website modern untuk sekolah, UMKM, dan instansi pemerintahan.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <p class="timeline-desc">Berfokus pada UI/UX Design dan pengembangan antarmuka interaktif yang responsif.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section container">
+            <div class="section-header">
+                <h2 class="section-title">Mulai <span class="text-primary">Proyek Baru</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info-wrapper">
+                    <h3>Mari berkolaborasi</h3>
+                    <p>Punya ide proyek, pertanyaan, atau butuh konsultasi? Jangan ragu untuk menghubungi saya.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="info-item">
+                            <div class="icon-box"><i class='bx bx-envelope'></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <span>anugrahmanu885@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box"><i class='bx bxl-whatsapp'></i></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <span>+62 877 6124 9353</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box"><i class='bx bx-map'></i></div>
+                            <div>
+                                <h4>Lokasi</h4>
+                                <span>Batumarta II, Sumatera Selatan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper glass-panel">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Nama Lengkap">
+                            <label for="name">Nama</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Alamat Email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder="Subjek Pesan">
+                            <label for="subject">Subjek</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                            <label for="message">Pesan</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Kirim Pesan</span>
+                            <i class='bx bx-send'></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="text-primary">A</span>nugrah<span class="text-accent">.</span>
+                </a>
+                <p>Membangun masa depan digital untuk pendidikan dan bisnis.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang</a>
+                <a href="#portfolio">Portofolio</a>
+                <a href="#contact">Kontak</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/anugrahamanu" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/nugrahaa_amp/" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/6287761249353" target="_blank" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anugrah Amanu Pratama. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Typed.js for typing animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
