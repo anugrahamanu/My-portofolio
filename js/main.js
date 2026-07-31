@@ -332,7 +332,7 @@ document.addEventListener("DOMContentLoaded", () => {
             backSpeed: 40,
             backDelay: 2500,
             loop: true,
-            showCursor: true,
+            showCursor: false,
             cursorChar: '|'
         });
     }
