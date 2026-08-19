@@ -307,9 +307,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            const mailtoLink = `mailto:anugrahamanu885@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Nama: " + name + "\nEmail: " + email + "\n\nPesan:\n" + message)}`;
+            window.location.href = mailtoLink;
+
             const btn = contactForm.querySelector('button');
             const originalText = btn.innerHTML;
-            btn.innerHTML = `<span>Terkirim!</span> <i class='bx bx-check'></i>`;
+            btn.innerHTML = `<span>Dialihkan ke Email!</span> <i class='bx bx-check'></i>`;
             btn.style.background = 'var(--accent-color)';
             btn.style.color = '#000';
             
